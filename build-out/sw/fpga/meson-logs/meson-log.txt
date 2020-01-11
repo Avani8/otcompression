@@ -1,0 +1,85 @@
+Build started at 2020-01-10T22:16:08.098317
+Main binary: /usr/local/bin/python3
+Build Options: -Ddev_bin_dir=/home/test/opentitan/build-bin/sw/device/fpga -Dhost_bin_dir=/home/test/opentitan/build-bin/sw/host -Dtarget=fpga -Dot_version=opentitan-snapshot-20191101-1-452-gb4919e5 -Dbackend=ninja
+Python system: Linux
+The Meson build system
+Version: 0.52.0
+Source dir: /home/test/opentitan
+Build dir: /home/test/opentitan/build-out/sw/fpga
+Build type: cross build
+Project name: opentitan
+Project version: 0.1
+C compiler for the build machine: ccache cc (gcc 8.3.0 "cc (Ubuntu 8.3.0-6ubuntu1) 8.3.0")
+C linker for the build machine: GNU ld.bfd 2.32
+C++ compiler for the build machine: ccache c++ (gcc 8.3.0 "c++ (Ubuntu 8.3.0-6ubuntu1) 8.3.0")
+C++ linker for the build machine: GNU ld.bfd 2.32
+C compiler for the host machine: /tools/riscv/bin/riscv32-unknown-elf-gcc (gcc 9.2.0 "riscv32-unknown-elf-gcc (crosstool-NG 1.24.0.37-3f461da) 9.2.0")
+C linker for the host machine: GNU ld.bfd 1.24.0.37-3f461da
+C++ compiler for the host machine: /tools/riscv/bin/riscv32-unknown-elf-g++ (gcc 9.2.0 "riscv32-unknown-elf-g++ (crosstool-NG 1.24.0.37-3f461da) 9.2.0")
+C++ linker for the host machine: GNU ld.bfd 1.24.0.37-3f461da
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: riscv32
+Host machine cpu: ibex
+Target machine cpu family: riscv32
+Target machine cpu: ibex
+WARNING: Consider using the builtin optimization level rather than adding flags by hand.
+WARNING: Consider using the builtin optimization level rather than adding flags by hand.
+Program python3 found: YES (/usr/local/bin/python3)
+Program srec_cat found: YES (/usr/bin/srec_cat)
+Program git found: YES (/usr/bin/git)
+Dependency libftdi1 found: YES (cached)
+Dependency libusb-1.0 found: YES (cached)
+Dependency libcrypto found: YES (cached)
+Build targets in project: 46
+Found ninja-1.9.0.git.kitware.dyndep-1.jobserver-1 at /usr/local/bin/ninja
+Running compile:
+Working directory:  /home/test/opentitan/build-out/sw/fpga/meson-private/tmpcj2r7yy4
+Command line:  /tools/riscv/bin/riscv32-unknown-elf-gcc /home/test/opentitan/build-out/sw/fpga/meson-private/tmpcj2r7yy4/testfile.c -o /home/test/opentitan/build-out/sw/fpga/meson-private/tmpcj2r7yy4/output.obj -pipe -c -mabi=ilp32 -march=rv32imc -mcmodel=medany -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /tools/riscv/lib/gcc/riscv32-unknown-elf/9.2.0/
+programs: =/tools/riscv/libexec/gcc/riscv32-unknown-elf/9.2.0/:/tools/riscv/libexec/gcc/riscv32-unknown-elf/9.2.0/:/tools/riscv/libexec/gcc/riscv32-unknown-elf/:/tools/riscv/lib/gcc/riscv32-unknown-elf/9.2.0/:/tools/riscv/lib/gcc/riscv32-unknown-elf/:/tools/riscv/lib/gcc/riscv32-unknown-elf/9.2.0/../../../../riscv32-unknown-elf/bin/riscv32-unknown-elf/9.2.0/:/tools/riscv/lib/gcc/riscv32-unknown-elf/9.2.0/../../../../riscv32-unknown-elf/bin/
+libraries: =/tools/riscv/lib/gcc/riscv32-unknown-elf/9.2.0/:/tools/riscv/lib/gcc/riscv32-unknown-elf/9.2.0/../../../../riscv32-unknown-elf/lib/riscv32-unknown-elf/9.2.0/:/tools/riscv/lib/gcc/riscv32-unknown-elf/9.2.0/../../../../riscv32-unknown-elf/lib/:/lib32/ilp32/riscv32-unknown-elf/9.2.0/:/lib32/ilp32/:/usr/lib32/ilp32/riscv32-unknown-elf/9.2.0/:/usr/lib32/ilp32/:/lib/riscv32-unknown-elf/9.2.0/:/lib/:/usr/lib/riscv32-unknown-elf/9.2.0/:/usr/lib/
+
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/test/opentitan/build-out/sw/fpga/meson-private/tmp3wh39cai
+Command line:  ccache cc /home/test/opentitan/build-out/sw/fpga/meson-private/tmp3wh39cai/testfile.c -o /home/test/opentitan/build-out/sw/fpga/meson-private/tmp3wh39cai/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/8/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/8/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/8/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpgx4mzdxr
+Command line:  ccache c++ /tmp/tmpgx4mzdxr/testfile.cpp -o /tmp/tmpgx4mzdxr/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++14 
+
+Code:
+ int i = static_cast<int>(0);
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler accepts -std=c++14: YES
+Running compile:
+Working directory:  /home/test/opentitan/build-out/sw/fpga/meson-private/tmpnjbgkq1l
+Command line:  ccache c++ /home/test/opentitan/build-out/sw/fpga/meson-private/tmpnjbgkq1l/testfile.cpp -o /home/test/opentitan/build-out/sw/fpga/meson-private/tmpnjbgkq1l/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/8/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/8/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/8/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 

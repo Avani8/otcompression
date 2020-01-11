@@ -1,0 +1,9 @@
+[options]
+ot_version = opentitan-snapshot-20191101-1-452-gb4919e5
+host_bin_dir = /home/test/opentitan/build-bin/sw/host
+target = sim-verilator
+dev_bin_dir = /home/test/opentitan/build-bin/sw/device/sim-verilator
+
+[properties]
+cross_file = ['/tmp/toolchain.3PiZ3P.txt']
+

@@ -1,0 +1,332 @@
+[
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/base/8a01f69@@mem_ot@sta -Isw/device/lib/base -I../../../sw/device/lib/base -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -fno-builtin -MD -MQ 'sw/device/lib/base/8a01f69@@mem_ot@sta/memory.c.o' -MF 'sw/device/lib/base/8a01f69@@mem_ot@sta/memory.c.o.d' -o 'sw/device/lib/base/8a01f69@@mem_ot@sta/memory.c.o' -c ../../../sw/device/lib/base/memory.c",
+    "file": "../../../sw/device/lib/base/memory.c",
+    "output": "sw/device/lib/base/8a01f69@@mem_ot@sta/memory.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/base/8a01f69@@mmio_ot@sta -Isw/device/lib/base -I../../../sw/device/lib/base -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/base/8a01f69@@mmio_ot@sta/mmio.c.o' -MF 'sw/device/lib/base/8a01f69@@mmio_ot@sta/mmio.c.o.d' -o 'sw/device/lib/base/8a01f69@@mmio_ot@sta/mmio.c.o' -c ../../../sw/device/lib/base/mmio.c",
+    "file": "../../../sw/device/lib/base/mmio.c",
+    "output": "sw/device/lib/base/8a01f69@@mmio_ot@sta/mmio.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/runtime/11886ca@@runtime_ibex_ot@sta -Isw/device/lib/runtime -I../../../sw/device/lib/runtime -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/runtime/11886ca@@runtime_ibex_ot@sta/ibex.c.o' -MF 'sw/device/lib/runtime/11886ca@@runtime_ibex_ot@sta/ibex.c.o.d' -o 'sw/device/lib/runtime/11886ca@@runtime_ibex_ot@sta/ibex.c.o' -c ../../../sw/device/lib/runtime/ibex.c",
+    "file": "../../../sw/device/lib/runtime/ibex.c",
+    "output": "sw/device/lib/runtime/11886ca@@runtime_ibex_ot@sta/ibex.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/runtime/11886ca@@runtime_hart_ot@sta -Isw/device/lib/runtime -I../../../sw/device/lib/runtime -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/runtime/11886ca@@runtime_hart_ot@sta/hart.c.o' -MF 'sw/device/lib/runtime/11886ca@@runtime_hart_ot@sta/hart.c.o.d' -o 'sw/device/lib/runtime/11886ca@@runtime_hart_ot@sta/hart.c.o' -c ../../../sw/device/lib/runtime/hart.c",
+    "file": "../../../sw/device/lib/runtime/hart.c",
+    "output": "sw/device/lib/runtime/11886ca@@runtime_hart_ot@sta/hart.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@uart_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@uart_ot@sta/uart.c.o' -MF 'sw/device/lib/e287d45@@uart_ot@sta/uart.c.o.d' -o 'sw/device/lib/e287d45@@uart_ot@sta/uart.c.o' -c ../../../sw/device/lib/uart.c",
+    "file": "../../../sw/device/lib/uart.c",
+    "output": "sw/device/lib/e287d45@@uart_ot@sta/uart.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@flash_ctrl_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@flash_ctrl_ot@sta/flash_ctrl.c.o' -MF 'sw/device/lib/e287d45@@flash_ctrl_ot@sta/flash_ctrl.c.o.d' -o 'sw/device/lib/e287d45@@flash_ctrl_ot@sta/flash_ctrl.c.o' -c ../../../sw/device/lib/flash_ctrl.c",
+    "file": "../../../sw/device/lib/flash_ctrl.c",
+    "output": "sw/device/lib/e287d45@@flash_ctrl_ot@sta/flash_ctrl.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@gpio_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@gpio_ot@sta/gpio.c.o' -MF 'sw/device/lib/e287d45@@gpio_ot@sta/gpio.c.o.d' -o 'sw/device/lib/e287d45@@gpio_ot@sta/gpio.c.o' -c ../../../sw/device/lib/gpio.c",
+    "file": "../../../sw/device/lib/gpio.c",
+    "output": "sw/device/lib/e287d45@@gpio_ot@sta/gpio.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@pinmux_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@pinmux_ot@sta/pinmux.c.o' -MF 'sw/device/lib/e287d45@@pinmux_ot@sta/pinmux.c.o.d' -o 'sw/device/lib/e287d45@@pinmux_ot@sta/pinmux.c.o' -c ../../../sw/device/lib/pinmux.c",
+    "file": "../../../sw/device/lib/pinmux.c",
+    "output": "sw/device/lib/e287d45@@pinmux_ot@sta/pinmux.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@aes_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@aes_ot@sta/aes.c.o' -MF 'sw/device/lib/e287d45@@aes_ot@sta/aes.c.o.d' -o 'sw/device/lib/e287d45@@aes_ot@sta/aes.c.o' -c ../../../sw/device/lib/aes.c",
+    "file": "../../../sw/device/lib/aes.c",
+    "output": "sw/device/lib/e287d45@@aes_ot@sta/aes.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@hmac_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@hmac_ot@sta/hw_sha256.c.o' -MF 'sw/device/lib/e287d45@@hmac_ot@sta/hw_sha256.c.o.d' -o 'sw/device/lib/e287d45@@hmac_ot@sta/hw_sha256.c.o' -c ../../../sw/device/lib/hw_sha256.c",
+    "file": "../../../sw/device/lib/hw_sha256.c",
+    "output": "sw/device/lib/e287d45@@hmac_ot@sta/hw_sha256.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@hmac_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@hmac_ot@sta/hmac.c.o' -MF 'sw/device/lib/e287d45@@hmac_ot@sta/hmac.c.o.d' -o 'sw/device/lib/e287d45@@hmac_ot@sta/hmac.c.o' -c ../../../sw/device/lib/hmac.c",
+    "file": "../../../sw/device/lib/hmac.c",
+    "output": "sw/device/lib/e287d45@@hmac_ot@sta/hmac.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@irq_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@irq_ot@sta/irq.c.o' -MF 'sw/device/lib/e287d45@@irq_ot@sta/irq.c.o.d' -o 'sw/device/lib/e287d45@@irq_ot@sta/irq.c.o' -c ../../../sw/device/lib/irq.c",
+    "file": "../../../sw/device/lib/irq.c",
+    "output": "sw/device/lib/e287d45@@irq_ot@sta/irq.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@irq_default_handlers_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@irq_default_handlers_ot@sta/handler.c.o' -MF 'sw/device/lib/e287d45@@irq_default_handlers_ot@sta/handler.c.o.d' -o 'sw/device/lib/e287d45@@irq_default_handlers_ot@sta/handler.c.o' -c ../../../sw/device/lib/handler.c",
+    "file": "../../../sw/device/lib/handler.c",
+    "output": "sw/device/lib/e287d45@@irq_default_handlers_ot@sta/handler.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@rv_timer_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@rv_timer_ot@sta/rv_timer.c.o' -MF 'sw/device/lib/e287d45@@rv_timer_ot@sta/rv_timer.c.o.d' -o 'sw/device/lib/e287d45@@rv_timer_ot@sta/rv_timer.c.o' -c ../../../sw/device/lib/rv_timer.c",
+    "file": "../../../sw/device/lib/rv_timer.c",
+    "output": "sw/device/lib/e287d45@@rv_timer_ot@sta/rv_timer.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@spid_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@spid_ot@sta/spi_device.c.o' -MF 'sw/device/lib/e287d45@@spid_ot@sta/spi_device.c.o.d' -o 'sw/device/lib/e287d45@@spid_ot@sta/spi_device.c.o' -c ../../../sw/device/lib/spi_device.c",
+    "file": "../../../sw/device/lib/spi_device.c",
+    "output": "sw/device/lib/e287d45@@spid_ot@sta/spi_device.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@usb_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@usb_ot@sta/usb_controlep.c.o' -MF 'sw/device/lib/e287d45@@usb_ot@sta/usb_controlep.c.o.d' -o 'sw/device/lib/e287d45@@usb_ot@sta/usb_controlep.c.o' -c ../../../sw/device/lib/usb_controlep.c",
+    "file": "../../../sw/device/lib/usb_controlep.c",
+    "output": "sw/device/lib/e287d45@@usb_ot@sta/usb_controlep.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@usb_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@usb_ot@sta/usb_simpleserial.c.o' -MF 'sw/device/lib/e287d45@@usb_ot@sta/usb_simpleserial.c.o.d' -o 'sw/device/lib/e287d45@@usb_ot@sta/usb_simpleserial.c.o' -c ../../../sw/device/lib/usb_simpleserial.c",
+    "file": "../../../sw/device/lib/usb_simpleserial.c",
+    "output": "sw/device/lib/e287d45@@usb_ot@sta/usb_simpleserial.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@usb_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@usb_ot@sta/usbdev.c.o' -MF 'sw/device/lib/e287d45@@usb_ot@sta/usbdev.c.o.d' -o 'sw/device/lib/e287d45@@usb_ot@sta/usbdev.c.o' -c ../../../sw/device/lib/usbdev.c",
+    "file": "../../../sw/device/lib/usbdev.c",
+    "output": "sw/device/lib/e287d45@@usb_ot@sta/usbdev.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/lib/e287d45@@log_ot@sta -Isw/device/lib -I../../../sw/device/lib -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/lib/e287d45@@log_ot@sta/print_log.c.o' -MF 'sw/device/lib/e287d45@@log_ot@sta/print_log.c.o.d' -o 'sw/device/lib/e287d45@@log_ot@sta/print_log.c.o' -c ../../../sw/device/lib/print_log.c",
+    "file": "../../../sw/device/lib/print_log.c",
+    "output": "sw/device/lib/e287d45@@log_ot@sta/print_log.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/exts/common/0260d88@@riscv_linker_script_dep_shim@sta -Isw/device/exts/common -I../../../sw/device/exts/common -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/exts/common/0260d88@@riscv_linker_script_dep_shim@sta/empty.c.o' -MF 'sw/device/exts/common/0260d88@@riscv_linker_script_dep_shim@sta/empty.c.o.d' -o 'sw/device/exts/common/0260d88@@riscv_linker_script_dep_shim@sta/empty.c.o' -c ../../../sw/device/exts/common/empty.c",
+    "file": "../../../sw/device/exts/common/empty.c",
+    "output": "sw/device/exts/common/0260d88@@riscv_linker_script_dep_shim@sta/empty.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/boot_rom/ca2afb1@@boot_rom@exe -Isw/device/boot_rom -I../../../sw/device/boot_rom -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/boot_rom/ca2afb1@@boot_rom@exe/boot_rom.c.o' -MF 'sw/device/boot_rom/ca2afb1@@boot_rom@exe/boot_rom.c.o.d' -o 'sw/device/boot_rom/ca2afb1@@boot_rom@exe/boot_rom.c.o' -c ../../../sw/device/boot_rom/boot_rom.c",
+    "file": "../../../sw/device/boot_rom/boot_rom.c",
+    "output": "sw/device/boot_rom/ca2afb1@@boot_rom@exe/boot_rom.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/boot_rom/ca2afb1@@boot_rom@exe -Isw/device/boot_rom -I../../../sw/device/boot_rom -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/boot_rom/ca2afb1@@boot_rom@exe/bootstrap.c.o' -MF 'sw/device/boot_rom/ca2afb1@@boot_rom@exe/bootstrap.c.o.d' -o 'sw/device/boot_rom/ca2afb1@@boot_rom@exe/bootstrap.c.o' -c ../../../sw/device/boot_rom/bootstrap.c",
+    "file": "../../../sw/device/boot_rom/bootstrap.c",
+    "output": "sw/device/boot_rom/ca2afb1@@boot_rom@exe/bootstrap.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/boot_rom/ca2afb1@@boot_rom@exe -Isw/device/boot_rom -I../../../sw/device/boot_rom -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/boot_rom/ca2afb1@@boot_rom@exe/irq_vector.S.o' -MF 'sw/device/boot_rom/ca2afb1@@boot_rom@exe/irq_vector.S.o.d' -o 'sw/device/boot_rom/ca2afb1@@boot_rom@exe/irq_vector.S.o' -c ../../../sw/device/boot_rom/irq_vector.S",
+    "file": "../../../sw/device/boot_rom/irq_vector.S",
+    "output": "sw/device/boot_rom/ca2afb1@@boot_rom@exe/irq_vector.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/boot_rom/ca2afb1@@boot_rom@exe -Isw/device/boot_rom -I../../../sw/device/boot_rom -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/boot_rom/ca2afb1@@boot_rom@exe/rom_crt.S.o' -MF 'sw/device/boot_rom/ca2afb1@@boot_rom@exe/rom_crt.S.o.d' -o 'sw/device/boot_rom/ca2afb1@@boot_rom@exe/rom_crt.S.o' -c ../../../sw/device/boot_rom/rom_crt.S",
+    "file": "../../../sw/device/boot_rom/rom_crt.S",
+    "output": "sw/device/boot_rom/ca2afb1@@boot_rom@exe/rom_crt.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe -Isw/device/examples/hello_usbdev -I../../../sw/device/examples/hello_usbdev -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe/hello_usbdev.c.o' -MF 'sw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe/hello_usbdev.c.o.d' -o 'sw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe/hello_usbdev.c.o' -c ../../../sw/device/examples/hello_usbdev/hello_usbdev.c",
+    "file": "../../../sw/device/examples/hello_usbdev/hello_usbdev.c",
+    "output": "sw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe/hello_usbdev.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe -Isw/device/examples/hello_usbdev -I../../../sw/device/examples/hello_usbdev -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe/.._.._exts_common_flash_crt.S.o' -MF 'sw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe/.._.._exts_common_flash_crt.S.o.d' -o 'sw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe/.._.._exts_common_flash_crt.S.o' -c ../../../sw/device/exts/common/flash_crt.S",
+    "file": "../../../sw/device/exts/common/flash_crt.S",
+    "output": "sw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe/.._.._exts_common_flash_crt.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe -Isw/device/examples/hello_usbdev -I../../../sw/device/examples/hello_usbdev -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe/.._.._lib_irq_vectors.S.o' -MF 'sw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe/.._.._lib_irq_vectors.S.o.d' -o 'sw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe/.._.._lib_irq_vectors.S.o' -c ../../../sw/device/lib/irq_vectors.S",
+    "file": "../../../sw/device/lib/irq_vectors.S",
+    "output": "sw/device/examples/hello_usbdev/3468fca@@hello_usbdev@exe/.._.._lib_irq_vectors.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/examples/hello_world/58a9f2a@@hello_world@exe -Isw/device/examples/hello_world -I../../../sw/device/examples/hello_world -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/examples/hello_world/58a9f2a@@hello_world@exe/hello_world.c.o' -MF 'sw/device/examples/hello_world/58a9f2a@@hello_world@exe/hello_world.c.o.d' -o 'sw/device/examples/hello_world/58a9f2a@@hello_world@exe/hello_world.c.o' -c ../../../sw/device/examples/hello_world/hello_world.c",
+    "file": "../../../sw/device/examples/hello_world/hello_world.c",
+    "output": "sw/device/examples/hello_world/58a9f2a@@hello_world@exe/hello_world.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/examples/hello_world/58a9f2a@@hello_world@exe -Isw/device/examples/hello_world -I../../../sw/device/examples/hello_world -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/examples/hello_world/58a9f2a@@hello_world@exe/.._.._exts_common_flash_crt.S.o' -MF 'sw/device/examples/hello_world/58a9f2a@@hello_world@exe/.._.._exts_common_flash_crt.S.o.d' -o 'sw/device/examples/hello_world/58a9f2a@@hello_world@exe/.._.._exts_common_flash_crt.S.o' -c ../../../sw/device/exts/common/flash_crt.S",
+    "file": "../../../sw/device/exts/common/flash_crt.S",
+    "output": "sw/device/examples/hello_world/58a9f2a@@hello_world@exe/.._.._exts_common_flash_crt.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/examples/hello_world/58a9f2a@@hello_world@exe -Isw/device/examples/hello_world -I../../../sw/device/examples/hello_world -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/examples/hello_world/58a9f2a@@hello_world@exe/.._.._lib_irq_vectors.S.o' -MF 'sw/device/examples/hello_world/58a9f2a@@hello_world@exe/.._.._lib_irq_vectors.S.o.d' -o 'sw/device/examples/hello_world/58a9f2a@@hello_world@exe/.._.._lib_irq_vectors.S.o' -c ../../../sw/device/lib/irq_vectors.S",
+    "file": "../../../sw/device/lib/irq_vectors.S",
+    "output": "sw/device/examples/hello_world/58a9f2a@@hello_world@exe/.._.._lib_irq_vectors.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/tests/aes/4128a20@@aes_test@exe -Isw/device/tests/aes -I../../../sw/device/tests/aes -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/tests/aes/4128a20@@aes_test@exe/aes_test.c.o' -MF 'sw/device/tests/aes/4128a20@@aes_test@exe/aes_test.c.o.d' -o 'sw/device/tests/aes/4128a20@@aes_test@exe/aes_test.c.o' -c ../../../sw/device/tests/aes/aes_test.c",
+    "file": "../../../sw/device/tests/aes/aes_test.c",
+    "output": "sw/device/tests/aes/4128a20@@aes_test@exe/aes_test.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/tests/aes/4128a20@@aes_test@exe -Isw/device/tests/aes -I../../../sw/device/tests/aes -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/tests/aes/4128a20@@aes_test@exe/.._.._exts_common_flash_crt.S.o' -MF 'sw/device/tests/aes/4128a20@@aes_test@exe/.._.._exts_common_flash_crt.S.o.d' -o 'sw/device/tests/aes/4128a20@@aes_test@exe/.._.._exts_common_flash_crt.S.o' -c ../../../sw/device/exts/common/flash_crt.S",
+    "file": "../../../sw/device/exts/common/flash_crt.S",
+    "output": "sw/device/tests/aes/4128a20@@aes_test@exe/.._.._exts_common_flash_crt.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/tests/flash_ctrl/7ed9012@@flash_test@exe -Isw/device/tests/flash_ctrl -I../../../sw/device/tests/flash_ctrl -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/tests/flash_ctrl/7ed9012@@flash_test@exe/flash_test.c.o' -MF 'sw/device/tests/flash_ctrl/7ed9012@@flash_test@exe/flash_test.c.o.d' -o 'sw/device/tests/flash_ctrl/7ed9012@@flash_test@exe/flash_test.c.o' -c ../../../sw/device/tests/flash_ctrl/flash_test.c",
+    "file": "../../../sw/device/tests/flash_ctrl/flash_test.c",
+    "output": "sw/device/tests/flash_ctrl/7ed9012@@flash_test@exe/flash_test.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/tests/flash_ctrl/7ed9012@@flash_test@exe -Isw/device/tests/flash_ctrl -I../../../sw/device/tests/flash_ctrl -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/tests/flash_ctrl/7ed9012@@flash_test@exe/.._.._exts_common_flash_crt.S.o' -MF 'sw/device/tests/flash_ctrl/7ed9012@@flash_test@exe/.._.._exts_common_flash_crt.S.o.d' -o 'sw/device/tests/flash_ctrl/7ed9012@@flash_test@exe/.._.._exts_common_flash_crt.S.o' -c ../../../sw/device/exts/common/flash_crt.S",
+    "file": "../../../sw/device/exts/common/flash_crt.S",
+    "output": "sw/device/tests/flash_ctrl/7ed9012@@flash_test@exe/.._.._exts_common_flash_crt.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/tests/flash_ctrl/7ed9012@@flash_test@exe -Isw/device/tests/flash_ctrl -I../../../sw/device/tests/flash_ctrl -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/tests/flash_ctrl/7ed9012@@flash_test@exe/.._.._lib_irq_vectors.S.o' -MF 'sw/device/tests/flash_ctrl/7ed9012@@flash_test@exe/.._.._lib_irq_vectors.S.o.d' -o 'sw/device/tests/flash_ctrl/7ed9012@@flash_test@exe/.._.._lib_irq_vectors.S.o' -c ../../../sw/device/lib/irq_vectors.S",
+    "file": "../../../sw/device/lib/irq_vectors.S",
+    "output": "sw/device/tests/flash_ctrl/7ed9012@@flash_test@exe/.._.._lib_irq_vectors.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/tests/hmac/cfcec15@@sha256_test@exe -Isw/device/tests/hmac -I../../../sw/device/tests/hmac -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/tests/hmac/cfcec15@@sha256_test@exe/sha256_test.c.o' -MF 'sw/device/tests/hmac/cfcec15@@sha256_test@exe/sha256_test.c.o.d' -o 'sw/device/tests/hmac/cfcec15@@sha256_test@exe/sha256_test.c.o' -c ../../../sw/device/tests/hmac/sha256_test.c",
+    "file": "../../../sw/device/tests/hmac/sha256_test.c",
+    "output": "sw/device/tests/hmac/cfcec15@@sha256_test@exe/sha256_test.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/tests/hmac/cfcec15@@sha256_test@exe -Isw/device/tests/hmac -I../../../sw/device/tests/hmac -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/tests/hmac/cfcec15@@sha256_test@exe/.._.._exts_common_flash_crt.S.o' -MF 'sw/device/tests/hmac/cfcec15@@sha256_test@exe/.._.._exts_common_flash_crt.S.o.d' -o 'sw/device/tests/hmac/cfcec15@@sha256_test@exe/.._.._exts_common_flash_crt.S.o' -c ../../../sw/device/exts/common/flash_crt.S",
+    "file": "../../../sw/device/exts/common/flash_crt.S",
+    "output": "sw/device/tests/hmac/cfcec15@@sha256_test@exe/.._.._exts_common_flash_crt.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/tests/hmac/cfcec15@@sha256_test@exe -Isw/device/tests/hmac -I../../../sw/device/tests/hmac -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/tests/hmac/cfcec15@@sha256_test@exe/.._.._lib_irq_vectors.S.o' -MF 'sw/device/tests/hmac/cfcec15@@sha256_test@exe/.._.._lib_irq_vectors.S.o.d' -o 'sw/device/tests/hmac/cfcec15@@sha256_test@exe/.._.._lib_irq_vectors.S.o' -c ../../../sw/device/lib/irq_vectors.S",
+    "file": "../../../sw/device/lib/irq_vectors.S",
+    "output": "sw/device/tests/hmac/cfcec15@@sha256_test@exe/.._.._lib_irq_vectors.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe -Isw/device/tests/rv_timer -I../../../sw/device/tests/rv_timer -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe/rv_timer_test.c.o' -MF 'sw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe/rv_timer_test.c.o.d' -o 'sw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe/rv_timer_test.c.o' -c ../../../sw/device/tests/rv_timer/rv_timer_test.c",
+    "file": "../../../sw/device/tests/rv_timer/rv_timer_test.c",
+    "output": "sw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe/rv_timer_test.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe -Isw/device/tests/rv_timer -I../../../sw/device/tests/rv_timer -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe/.._.._exts_common_flash_crt.S.o' -MF 'sw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe/.._.._exts_common_flash_crt.S.o.d' -o 'sw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe/.._.._exts_common_flash_crt.S.o' -c ../../../sw/device/exts/common/flash_crt.S",
+    "file": "../../../sw/device/exts/common/flash_crt.S",
+    "output": "sw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe/.._.._exts_common_flash_crt.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe -Isw/device/tests/rv_timer -I../../../sw/device/tests/rv_timer -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -MD -MQ 'sw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe/.._.._lib_irq_vectors.S.o' -MF 'sw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe/.._.._lib_irq_vectors.S.o.d' -o 'sw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe/.._.._lib_irq_vectors.S.o' -c ../../../sw/device/lib/irq_vectors.S",
+    "file": "../../../sw/device/lib/irq_vectors.S",
+    "output": "sw/device/tests/rv_timer/c06dc24@@rv_timer_test@exe/.._.._lib_irq_vectors.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe -Isw/device/benchmarks/coremark -I../../../sw/device/benchmarks/coremark -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -DITERATIONS=1 -DPERFORMANCE_RUN=1 -DTOTAL_DATA_SIZE=2000 -DMAIN_HAS_NOARGC=1 -MD -MQ 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/top_earlgrey_core_portme.c.o' -MF 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/top_earlgrey_core_portme.c.o.d' -o 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/top_earlgrey_core_portme.c.o' -c ../../../sw/device/benchmarks/coremark/top_earlgrey/core_portme.c",
+    "file": "../../../sw/device/benchmarks/coremark/top_earlgrey/core_portme.c",
+    "output": "sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/top_earlgrey_core_portme.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe -Isw/device/benchmarks/coremark -I../../../sw/device/benchmarks/coremark -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -DITERATIONS=1 -DPERFORMANCE_RUN=1 -DTOTAL_DATA_SIZE=2000 -DMAIN_HAS_NOARGC=1 -MD -MQ 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/top_earlgrey_ee_printf.c.o' -MF 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/top_earlgrey_ee_printf.c.o.d' -o 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/top_earlgrey_ee_printf.c.o' -c ../../../sw/device/benchmarks/coremark/top_earlgrey/ee_printf.c",
+    "file": "../../../sw/device/benchmarks/coremark/top_earlgrey/ee_printf.c",
+    "output": "sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/top_earlgrey_ee_printf.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe -Isw/device/benchmarks/coremark -I../../../sw/device/benchmarks/coremark -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -DITERATIONS=1 -DPERFORMANCE_RUN=1 -DTOTAL_DATA_SIZE=2000 -DMAIN_HAS_NOARGC=1 -MD -MQ 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_list_join.c.o' -MF 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_list_join.c.o.d' -o 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_list_join.c.o' -c ../../../sw/vendor/eembc_coremark/core_list_join.c",
+    "file": "../../../sw/vendor/eembc_coremark/core_list_join.c",
+    "output": "sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_list_join.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe -Isw/device/benchmarks/coremark -I../../../sw/device/benchmarks/coremark -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -DITERATIONS=1 -DPERFORMANCE_RUN=1 -DTOTAL_DATA_SIZE=2000 -DMAIN_HAS_NOARGC=1 -MD -MQ 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_main.c.o' -MF 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_main.c.o.d' -o 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_main.c.o' -c ../../../sw/vendor/eembc_coremark/core_main.c",
+    "file": "../../../sw/vendor/eembc_coremark/core_main.c",
+    "output": "sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_main.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe -Isw/device/benchmarks/coremark -I../../../sw/device/benchmarks/coremark -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -DITERATIONS=1 -DPERFORMANCE_RUN=1 -DTOTAL_DATA_SIZE=2000 -DMAIN_HAS_NOARGC=1 -MD -MQ 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_matrix.c.o' -MF 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_matrix.c.o.d' -o 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_matrix.c.o' -c ../../../sw/vendor/eembc_coremark/core_matrix.c",
+    "file": "../../../sw/vendor/eembc_coremark/core_matrix.c",
+    "output": "sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_matrix.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe -Isw/device/benchmarks/coremark -I../../../sw/device/benchmarks/coremark -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -DITERATIONS=1 -DPERFORMANCE_RUN=1 -DTOTAL_DATA_SIZE=2000 -DMAIN_HAS_NOARGC=1 -MD -MQ 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_state.c.o' -MF 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_state.c.o.d' -o 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_state.c.o' -c ../../../sw/vendor/eembc_coremark/core_state.c",
+    "file": "../../../sw/vendor/eembc_coremark/core_state.c",
+    "output": "sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_state.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe -Isw/device/benchmarks/coremark -I../../../sw/device/benchmarks/coremark -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -DITERATIONS=1 -DPERFORMANCE_RUN=1 -DTOTAL_DATA_SIZE=2000 -DMAIN_HAS_NOARGC=1 -MD -MQ 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_util.c.o' -MF 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_util.c.o.d' -o 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_util.c.o' -c ../../../sw/vendor/eembc_coremark/core_util.c",
+    "file": "../../../sw/vendor/eembc_coremark/core_util.c",
+    "output": "sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._.._vendor_eembc_coremark_core_util.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "/tools/riscv/bin/riscv32-unknown-elf-gcc -Isw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe -Isw/device/benchmarks/coremark -I../../../sw/device/benchmarks/coremark -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -DSIMULATION -isystem/home/test/opentitan/sw/device/lib/base/freestanding -nostartfiles -nostdlib -nostdinc -static -Os -fvisibility=hidden -mabi=ilp32 -march=rv32imc -mcmodel=medany -DITERATIONS=1 -DPERFORMANCE_RUN=1 -DTOTAL_DATA_SIZE=2000 -DMAIN_HAS_NOARGC=1 -MD -MQ 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._exts_common_flash_crt.S.o' -MF 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._exts_common_flash_crt.S.o.d' -o 'sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._exts_common_flash_crt.S.o' -c ../../../sw/device/exts/common/flash_crt.S",
+    "file": "../../../sw/device/exts/common/flash_crt.S",
+    "output": "sw/device/benchmarks/coremark/eb1eb4e@@coremark_top_earlgrey@exe/.._.._exts_common_flash_crt.S.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "ccache cc -Isw/host/vendor/f7f1432@@mpsse@sta -Isw/host/vendor -I../../../sw/host/vendor -I/home/test/opentitan/sw/host/vendor/mpsse -I/usr/include/libftdi1 -I/usr/include/libusb-1.0 -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -MD -MQ 'sw/host/vendor/f7f1432@@mpsse@sta/mpsse_mpsse.c.o' -MF 'sw/host/vendor/f7f1432@@mpsse@sta/mpsse_mpsse.c.o.d' -o 'sw/host/vendor/f7f1432@@mpsse@sta/mpsse_mpsse.c.o' -c ../../../sw/host/vendor/mpsse/mpsse.c",
+    "file": "../../../sw/host/vendor/mpsse/mpsse.c",
+    "output": "sw/host/vendor/f7f1432@@mpsse@sta/mpsse_mpsse.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "ccache cc -Isw/host/vendor/f7f1432@@mpsse@sta -Isw/host/vendor -I../../../sw/host/vendor -I/home/test/opentitan/sw/host/vendor/mpsse -I/usr/include/libftdi1 -I/usr/include/libusb-1.0 -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Werror -std=c11 -g -MD -MQ 'sw/host/vendor/f7f1432@@mpsse@sta/mpsse_support.c.o' -MF 'sw/host/vendor/f7f1432@@mpsse@sta/mpsse_support.c.o.d' -o 'sw/host/vendor/f7f1432@@mpsse@sta/mpsse_support.c.o' -c ../../../sw/host/vendor/mpsse/support.c",
+    "file": "../../../sw/host/vendor/mpsse/support.c",
+    "output": "sw/host/vendor/f7f1432@@mpsse@sta/mpsse_support.c.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "ccache c++ -Isw/host/spiflash/e5d2d52@@spiflash@exe -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Werror -std=c++14 -g -MD -MQ 'sw/host/spiflash/e5d2d52@@spiflash@exe/ftdi_spi_interface.cc.o' -MF 'sw/host/spiflash/e5d2d52@@spiflash@exe/ftdi_spi_interface.cc.o.d' -o 'sw/host/spiflash/e5d2d52@@spiflash@exe/ftdi_spi_interface.cc.o' -c ../../../sw/host/spiflash/ftdi_spi_interface.cc",
+    "file": "../../../sw/host/spiflash/ftdi_spi_interface.cc",
+    "output": "sw/host/spiflash/e5d2d52@@spiflash@exe/ftdi_spi_interface.cc.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "ccache c++ -Isw/host/spiflash/e5d2d52@@spiflash@exe -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Werror -std=c++14 -g -MD -MQ 'sw/host/spiflash/e5d2d52@@spiflash@exe/spiflash.cc.o' -MF 'sw/host/spiflash/e5d2d52@@spiflash@exe/spiflash.cc.o.d' -o 'sw/host/spiflash/e5d2d52@@spiflash@exe/spiflash.cc.o' -c ../../../sw/host/spiflash/spiflash.cc",
+    "file": "../../../sw/host/spiflash/spiflash.cc",
+    "output": "sw/host/spiflash/e5d2d52@@spiflash@exe/spiflash.cc.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "ccache c++ -Isw/host/spiflash/e5d2d52@@spiflash@exe -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Werror -std=c++14 -g -MD -MQ 'sw/host/spiflash/e5d2d52@@spiflash@exe/updater.cc.o' -MF 'sw/host/spiflash/e5d2d52@@spiflash@exe/updater.cc.o.d' -o 'sw/host/spiflash/e5d2d52@@spiflash@exe/updater.cc.o' -c ../../../sw/host/spiflash/updater.cc",
+    "file": "../../../sw/host/spiflash/updater.cc",
+    "output": "sw/host/spiflash/e5d2d52@@spiflash@exe/updater.cc.o"
+  },
+  {
+    "directory": "/home/test/opentitan/build-out/sw/sim-verilator",
+    "command": "ccache c++ -Isw/host/spiflash/e5d2d52@@spiflash@exe -I/home/test/opentitan -I/home/test/opentitan/build-out/sw/sim-verilator -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Werror -std=c++14 -g -MD -MQ 'sw/host/spiflash/e5d2d52@@spiflash@exe/verilator_spi_interface.cc.o' -MF 'sw/host/spiflash/e5d2d52@@spiflash@exe/verilator_spi_interface.cc.o.d' -o 'sw/host/spiflash/e5d2d52@@spiflash@exe/verilator_spi_interface.cc.o' -c ../../../sw/host/spiflash/verilator_spi_interface.cc",
+    "file": "../../../sw/host/spiflash/verilator_spi_interface.cc",
+    "output": "sw/host/spiflash/e5d2d52@@spiflash@exe/verilator_spi_interface.cc.o"
+  }
+]

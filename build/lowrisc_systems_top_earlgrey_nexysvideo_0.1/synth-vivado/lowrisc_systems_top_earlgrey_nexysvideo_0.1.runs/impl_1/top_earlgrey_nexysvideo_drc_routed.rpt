@@ -1,0 +1,299 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Fri Jan 10 22:26:23 2020
+| Host         : test running 64-bit Ubuntu 19.04
+| Command      : report_drc -file top_earlgrey_nexysvideo_drc_routed.rpt -pb top_earlgrey_nexysvideo_drc_routed.pb -rpx top_earlgrey_nexysvideo_drc_routed.rpx
+| Design       : top_earlgrey_nexysvideo
+| Device       : xc7a200tsbg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 51
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| CHECK-3     | Warning  | Report rule limit reached                                   | 2          |
+| DPIP-1      | Warning  | Input pipelining                                            | 3          |
+| DPOP-1      | Warning  | PREG Output pipelining                                      | 1          |
+| DPOP-2      | Warning  | MREG Output pipelining                                      | 1          |
+| PDRC-153    | Warning  | Gated clock check                                           | 3          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
+| REQP-1839   | Warning  | RAMB36 async control check                                  | 20         |
+| REQP-1840   | Warning  | RAMB18 async control check                                  | 20         |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+CHECK-3#2 Warning
+Report rule limit reached  
+REQP-1840 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed input top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed input top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed input top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed output top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed multiplier stage top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net top_earlgrey/spi_device/u_reg/u_cfg_cpol/clk_spi_out is a gated clock net sourced by a combinational pin top_earlgrey/spi_device/u_reg/u_cfg_cpol/tx_bitcount[2]_i_2/O, cell top_earlgrey/spi_device/u_reg/u_cfg_cpol/tx_bitcount[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net top_earlgrey/spi_device/u_txf_ctrl/st_next is a gated clock net sourced by a combinational pin top_earlgrey/spi_device/u_txf_ctrl/FSM_onehot_st_next_reg[4]_i_2/O, cell top_earlgrey/spi_device/u_txf_ctrl/FSM_onehot_st_next_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/tck_i is a gated clock net sourced by a combinational pin top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i_i_2/O, cell top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT top_earlgrey/spi_device/u_reg/u_cfg_cpol/tx_bitcount[2]_i_2 is driving clock pin of 29 cells. This could lead to large hold time violations. Involved cells are:
+top_earlgrey/spi_device/txf_empty_q_reg, top_earlgrey/spi_device/u_fwmode/miso_shift_reg[0], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[1], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[2], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[3], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[4], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[5], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[6], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[7], top_earlgrey/spi_device/u_fwmode/tx_bitcount_reg[0], top_earlgrey/spi_device/u_fwmode/tx_bitcount_reg[1], top_earlgrey/spi_device/u_fwmode/tx_bitcount_reg[2], top_earlgrey/spi_device/u_fwmode/tx_state_reg, top_earlgrey/spi_device/u_tx_fifo/fifo_rptr_gray_reg[0], top_earlgrey/spi_device/u_tx_fifo/fifo_rptr_gray_reg[1] (the first 15 of 29 listed)
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_flash_prog_ctrl/cnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_control_erase_sel/q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_control_op/q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_control_op/q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/dev_select_outstanding_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/fifo_rptr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/fifo_rptr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/fifo_rptr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/sync_wptr/q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/sync_wptr/q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/sync_wptr/q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/dev_select_outstanding_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#17 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/dev_select_outstanding_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#18 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/dev_select_outstanding_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#19 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/num_req_outstanding_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#20 Warning
+RAMB18 async control check  
+The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/num_req_outstanding_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+

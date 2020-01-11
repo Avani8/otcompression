@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jan 10 22:17:33 2020
+# Process ID: 2559
+# Current directory: /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado
+# Command line: vivado -notrace -mode batch -source lowrisc_systems_top_earlgrey_nexysvideo_0.1_run.tcl lowrisc_systems_top_earlgrey_nexysvideo_0.1.xpr
+# Log file: /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/vivado.log
+# Journal file: /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/vivado.jou
+#-----------------------------------------------------------
+open_project lowrisc_systems_top_earlgrey_nexysvideo_0.1.xpr
+source lowrisc_systems_top_earlgrey_nexysvideo_0.1_run.tcl -notrace

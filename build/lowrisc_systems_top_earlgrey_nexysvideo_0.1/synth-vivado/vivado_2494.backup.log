@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jan 10 22:17:27 2020
+# Process ID: 2494
+# Current directory: /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado
+# Command line: vivado -notrace -mode batch -source lowrisc_systems_top_earlgrey_nexysvideo_0.1.tcl
+# Log file: /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/vivado.log
+# Journal file: /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/vivado.jou
+#-----------------------------------------------------------
+source lowrisc_systems_top_earlgrey_nexysvideo_0.1.tcl -notrace
+WARNING: [Runs 36-537] File /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/vivado_hook_opt_design_post.tcl is not part of fileset utils_1, but has specified as a Tcl hook script for run(s) impl_1. This file will not be handled as part of the project for archive and other project based functionality.
+WARNING: [Runs 36-537] File /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/vivado_hook_write_bitstream_pre.tcl is not part of fileset utils_1, but has specified as a Tcl hook script for run(s) impl_1. This file will not be handled as part of the project for archive and other project based functionality.
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 10 22:17:32 2020...

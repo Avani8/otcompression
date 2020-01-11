@@ -1,0 +1,924 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jan 10 22:17:33 2020
+# Process ID: 2559
+# Current directory: /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado
+# Command line: vivado -notrace -mode batch -source lowrisc_systems_top_earlgrey_nexysvideo_0.1_run.tcl lowrisc_systems_top_earlgrey_nexysvideo_0.1.xpr
+# Log file: /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/vivado.log
+# Journal file: /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/vivado.jou
+#-----------------------------------------------------------
+open_project lowrisc_systems_top_earlgrey_nexysvideo_0.1.xpr
+Scanning sources...
+Finished scanning sources
+source lowrisc_systems_top_earlgrey_nexysvideo_0.1_run.tcl -notrace
+[Fri Jan 10 22:17:40 2020] Launched synth_1...
+Run output will be captured here: /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/lowrisc_systems_top_earlgrey_nexysvideo_0.1.runs/synth_1/runme.log
+[Fri Jan 10 22:17:40 2020] Launched impl_1...
+Run output will be captured here: /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/lowrisc_systems_top_earlgrey_nexysvideo_0.1.runs/impl_1/runme.log
+[Fri Jan 10 22:17:40 2020] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log top_earlgrey_nexysvideo.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_earlgrey_nexysvideo.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top_earlgrey_nexysvideo.tcl -notrace
+Command: link_design -top top_earlgrey_nexysvideo -part xc7a200tsbg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 3014 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc]
+WARNING: [Vivado 12-584] No ports matched 'IO_USB_DP0'. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IO_USB_DN0'. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IO_USB_PULLUP0'. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IO_USB_SENSE0'. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IO_USB_DP1'. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IO_USB_DN1'. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IO_USB_PULLUP1'. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IO_USB_SENSE1'. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IO_OBS'. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/pins_nexysvideo.xdc]
+Parsing XDC File [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/placement.xdc]
+Finished Parsing XDC File [/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/src/lowrisc_systems_top_earlgrey_nexysvideo_0.1/data/placement.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1810.074 ; gain = 0.000 ; free physical = 22435 ; free virtual = 28305
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 948 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 3 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 929 instances
+
+7 Infos, 9 Warnings, 9 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1810.074 ; gain = 451.684 ; free physical = 22436 ; free virtual = 28305
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.94 . Memory (MB): peak = 1874.105 ; gain = 64.031 ; free physical = 22441 ; free virtual = 28305
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+Ending Cache Timing Information Task | Checksum: 144f3ebfb
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2402.801 ; gain = 528.695 ; free physical = 21950 ; free virtual = 27828
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1d88555ce
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2479.801 ; gain = 0.000 ; free physical = 21932 ; free virtual = 27807
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 35 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 16395d603
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2479.801 ; gain = 0.000 ; free physical = 21926 ; free virtual = 27806
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 15c4c3731
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2479.801 ; gain = 0.000 ; free physical = 21926 ; free virtual = 27806
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG clkgen/clk_50_unbuf_BUFG_inst to drive 0 load(s) on clock net clkgen/clk_50_unbuf_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 19f3fd6da
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2479.801 ; gain = 0.000 ; free physical = 21925 ; free virtual = 27804
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 153bfd13d
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2479.801 ; gain = 0.000 ; free physical = 21924 ; free virtual = 27804
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: f1ca1daa
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2479.801 ; gain = 0.000 ; free physical = 21921 ; free virtual = 27804
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |              35  |                                              1  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               1  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2479.801 ; gain = 0.000 ; free physical = 21921 ; free virtual = 27804
+Ending Logic Optimization Task | Checksum: 828a1476
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2479.801 ; gain = 0.000 ; free physical = 21921 ; free virtual = 27804
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=2.281 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 148 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 16 newly gated: 0 Total Ports: 296
+Ending PowerOpt Patch Enables Task | Checksum: af26fa78
+
+Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.43 . Memory (MB): peak = 3094.891 ; gain = 0.000 ; free physical = 21617 ; free virtual = 27706
+Ending Power Optimization Task | Checksum: af26fa78
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:25 . Memory (MB): peak = 3094.891 ; gain = 615.090 ; free physical = 21663 ; free virtual = 27752
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: af26fa78
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3094.891 ; gain = 0.000 ; free physical = 21663 ; free virtual = 27752
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3094.891 ; gain = 0.000 ; free physical = 21663 ; free virtual = 27752
+Ending Netlist Obfuscation Task | Checksum: 132bb59fa
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3094.891 ; gain = 0.000 ; free physical = 21663 ; free virtual = 27752
+INFO: [Common 17-83] Releasing license: Implementation
+33 Infos, 25 Warnings, 9 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:02 ; elapsed = 00:00:38 . Memory (MB): peak = 3094.891 ; gain = 1284.816 ; free physical = 21663 ; free virtual = 27752
+source /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/vivado_hook_opt_design_post.tcl
+INFO: [Designcheck 2-1] Checking if ROM memory is mapped to BRAM memory.
+INFO: [Designcheck 2-2] BRAM implementation found for ROM memory.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3094.891 ; gain = 0.000 ; free physical = 21663 ; free virtual = 27752
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3094.891 ; gain = 0.000 ; free physical = 21661 ; free virtual = 27750
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3094.891 ; gain = 0.000 ; free physical = 21660 ; free virtual = 27753
+INFO: [Common 17-1381] The checkpoint '/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/lowrisc_systems_top_earlgrey_nexysvideo_0.1.runs/impl_1/top_earlgrey_nexysvideo_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3094.891 ; gain = 0.000 ; free physical = 21656 ; free virtual = 27765
+INFO: [runtcl-4] Executing : report_drc -file top_earlgrey_nexysvideo_drc_opted.rpt -pb top_earlgrey_nexysvideo_drc_opted.pb -rpx top_earlgrey_nexysvideo_drc_opted.rpx
+Command: report_drc -file top_earlgrey_nexysvideo_drc_opted.rpt -pb top_earlgrey_nexysvideo_drc_opted.pb -rpx top_earlgrey_nexysvideo_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/lowrisc_systems_top_earlgrey_nexysvideo_0.1.runs/impl_1/top_earlgrey_nexysvideo_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_flash_prog_ctrl/cnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_control_erase_sel/q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_control_op/q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_control_op/q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/dev_select_outstanding_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/fifo_rptr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/fifo_rptr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/fifo_rptr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/sync_wptr/q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/sync_wptr/q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/sync_wptr/q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/dev_select_outstanding_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/dev_select_outstanding_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/dev_select_outstanding_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/num_req_outstanding_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/num_req_outstanding_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 42 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21635 ; free virtual = 27744
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 7eb9bfdd
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21635 ; free virtual = 27744
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21635 ; free virtual = 27744
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-568] A LUT 'top_earlgrey/spi_device/u_reg/u_cfg_cpol/tx_bitcount[2]_i_2' is driving clock pin of 29 registers. This could lead to large hold time violations. First few involved registers are:
+	top_earlgrey/spi_device/u_tx_fifo/sync_wptr/intq_reg[0] {FDCE}
+	top_earlgrey/spi_device/u_tx_fifo/sync_wptr/intq_reg[1] {FDCE}
+	top_earlgrey/spi_device/u_tx_fifo/sync_wptr/q_reg[2] {FDCE}
+	top_earlgrey/spi_device/u_tx_fifo/sync_wptr/intq_reg[2] {FDCE}
+	top_earlgrey/spi_device/u_tx_fifo/sync_wptr/intq_reg[3] {FDCE}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1141bccbe
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21570 ; free virtual = 27690
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 16662bcc7
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21485 ; free virtual = 27599
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 16662bcc7
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21485 ; free virtual = 27599
+Phase 1 Placer Initialization | Checksum: 16662bcc7
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21485 ; free virtual = 27599
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1eb96e447
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:10 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21450 ; free virtual = 27563
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[5] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_13 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[13] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_5 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[6] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_12 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[11] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_7 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[9] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_9 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[7] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_11 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[3] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_15 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[8] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_10 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[1] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_17 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[14] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_4 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[0] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_18 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[15] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_3 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[12] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_6 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[10] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_8 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[2] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_16 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRARDADDR[4] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_0_i_14 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[13] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_5 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[7] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_11 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[3] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_15 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[8] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_10 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[1] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_17 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[14] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_4__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[11] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_7 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[13] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_5 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[3] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_15__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[9] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_9 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[4] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_14 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[7] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_11 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[5] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_13 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[2] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_16__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[0] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_18 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[3] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_15 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[9] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_9__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[8] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_10 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[11] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_7 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[11] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_7 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[5] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_13__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[5] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_13 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[9] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_9 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[6] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_12 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[15] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_3 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[3] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_15 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[7] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_11 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[6] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_12 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[14] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_4 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[0] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_18__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[2] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_16__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[8] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_10 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[13] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_5__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[14] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_4 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[1] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_17 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[0] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_18 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[14] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_4 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[1] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_17__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[4] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_14 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[10] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_8 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[11] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_7__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[14] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_4__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[6] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_12__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[3] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_15__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[5] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_13__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[9] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_9__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[9] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_9 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[12] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_6 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[5] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_13 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[8] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_10__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[10] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_8__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[1] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_17__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_16[7] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_11__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[12] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_6 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[15] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_3__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[2] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_16 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRBWRADDR[12] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_6__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[0] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_18__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[2] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_16 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[6] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_12 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRBWRADDR[8] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_10 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[13] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_5 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRBWRADDR[10] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_8 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[10] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_8 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[15] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_3__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[13] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_5__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRBWRADDR[13] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_5 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[15] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_3 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[4] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_14__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRBWRADDR[4] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_14__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[11] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_7__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRBWRADDR[2] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_16 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[4] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_14__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[10] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_8 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[1] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_17 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[12] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_6__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRBWRADDR[14] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_4 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_0[0] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_12_i_18 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_1[12] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_6__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRBWRADDR[1] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_17 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/held_rd_addr_reg[15]_2[4] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_24_i_14__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/ADDRBWRADDR[7] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[1].u_flash/gen_flash.u_impl_generic/mem_reg_0_6_i_11 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[8] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_10__0 could not be replicated
+INFO: [Physopt 32-117] Net top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/FSM_sequential_st_reg[0]_18[7] could not be optimized because driver top_earlgrey/u_flash_eflash/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/mem_reg_0_18_i_11__0 could not be replicated
+INFO: [Common 17-14] Message 'Physopt 32-117' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21383 ; free virtual = 27533
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           6  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: de45453c
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:33 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21390 ; free virtual = 27531
+Phase 2 Global Placement | Checksum: 123651fba
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:35 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21381 ; free virtual = 27538
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 123651fba
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:35 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21384 ; free virtual = 27535
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 13b367c33
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:40 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21372 ; free virtual = 27518
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 7019fac3
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:40 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21372 ; free virtual = 27518
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: c145ac63
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:41 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21373 ; free virtual = 27519
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 9eb78b31
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:00:46 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21219 ; free virtual = 27384
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 18046e71f
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:00:55 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21172 ; free virtual = 27333
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 134e17625
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:00:56 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21165 ; free virtual = 27328
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: c1af6385
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:00:56 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21165 ; free virtual = 27327
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 183874bc8
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:02 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21105 ; free virtual = 27267
+Phase 3 Detail Placement | Checksum: 183874bc8
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:02 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21105 ; free virtual = 27267
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 12705eb18
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net clkgen/dmcontrol_q_reg[ndmreset], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net clkgen/valid_q[2]_i_5_1, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-46] BUFG insertion identified 2 candidate nets, 0 success, 0 bufg driver replicated, 2 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+Phase 4.1.1.1 BUFG Insertion | Checksum: 12705eb18
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:01:07 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21112 ; free virtual = 27293
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.510. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: ff14521a
+
+Time (s): cpu = 00:02:34 ; elapsed = 00:01:09 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21116 ; free virtual = 27297
+Phase 4.1 Post Commit Optimization | Checksum: ff14521a
+
+Time (s): cpu = 00:02:34 ; elapsed = 00:01:10 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21115 ; free virtual = 27296
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: ff14521a
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:10 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21117 ; free virtual = 27298
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: ff14521a
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:10 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21127 ; free virtual = 27308
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21127 ; free virtual = 27308
+Phase 4.4 Final Placement Cleanup | Checksum: 19ec911bd
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:10 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21128 ; free virtual = 27308
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 19ec911bd
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:10 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21128 ; free virtual = 27308
+Ending Placer Task | Checksum: 178bab5ae
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:10 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21198 ; free virtual = 27377
+INFO: [Common 17-83] Releasing license: Implementation
+173 Infos, 68 Warnings, 9 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:38 ; elapsed = 00:01:12 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21201 ; free virtual = 27381
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21201 ; free virtual = 27381
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21180 ; free virtual = 27376
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21142 ; free virtual = 27372
+INFO: [Common 17-1381] The checkpoint '/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/lowrisc_systems_top_earlgrey_nexysvideo_0.1.runs/impl_1/top_earlgrey_nexysvideo_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21193 ; free virtual = 27378
+INFO: [runtcl-4] Executing : report_io -file top_earlgrey_nexysvideo_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21182 ; free virtual = 27367
+INFO: [runtcl-4] Executing : report_utilization -file top_earlgrey_nexysvideo_utilization_placed.rpt -pb top_earlgrey_nexysvideo_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_earlgrey_nexysvideo_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.17 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21192 ; free virtual = 27378
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: bafccacd ConstDB: 0 ShapeSum: bdbdeae1 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 8ce6eda8
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21326 ; free virtual = 27167
+Post Restoration Checksum: NetGraph: 179bb8a0 NumContArr: 754b3508 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 8ce6eda8
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21295 ; free virtual = 27136
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 8ce6eda8
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:31 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21255 ; free virtual = 27096
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 8ce6eda8
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:31 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21255 ; free virtual = 27096
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 208e813af
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:38 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21216 ; free virtual = 27058
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.121  | TNS=0.000  | WHS=-0.187 | THS=-364.337|
+
+Phase 2 Router Initialization | Checksum: 1558dc8ec
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:40 . Memory (MB): peak = 3119.887 ; gain = 0.000 ; free physical = 21215 ; free virtual = 27052
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1dab2a98a
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:01:05 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21121 ; free virtual = 26960
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 8288
+ Number of Nodes with overlaps = 1892
+ Number of Nodes with overlaps = 737
+ Number of Nodes with overlaps = 355
+ Number of Nodes with overlaps = 107
+ Number of Nodes with overlaps = 28
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.456  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 8ed4d0ad
+
+Time (s): cpu = 00:04:21 ; elapsed = 00:01:55 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21078 ; free virtual = 26955
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.267  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1314ae337
+
+Time (s): cpu = 00:04:24 ; elapsed = 00:01:57 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21076 ; free virtual = 26957
+Phase 4 Rip-up And Reroute | Checksum: 1314ae337
+
+Time (s): cpu = 00:04:24 ; elapsed = 00:01:57 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21076 ; free virtual = 26956
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 1314ae337
+
+Time (s): cpu = 00:04:24 ; elapsed = 00:01:57 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21079 ; free virtual = 26960
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1314ae337
+
+Time (s): cpu = 00:04:24 ; elapsed = 00:01:57 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21079 ; free virtual = 26960
+Phase 5 Delay and Skew Optimization | Checksum: 1314ae337
+
+Time (s): cpu = 00:04:24 ; elapsed = 00:01:57 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21079 ; free virtual = 26960
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 17f27aa52
+
+Time (s): cpu = 00:04:27 ; elapsed = 00:01:58 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21075 ; free virtual = 26954
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.267  | TNS=0.000  | WHS=0.040  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: dc064c49
+
+Time (s): cpu = 00:04:28 ; elapsed = 00:01:59 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21075 ; free virtual = 26954
+Phase 6 Post Hold Fix | Checksum: dc064c49
+
+Time (s): cpu = 00:04:28 ; elapsed = 00:01:59 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21075 ; free virtual = 26954
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.87173 %
+  Global Horizontal Routing Utilization  = 5.87541 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 155df27c5
+
+Time (s): cpu = 00:04:28 ; elapsed = 00:01:59 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21074 ; free virtual = 26953
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 155df27c5
+
+Time (s): cpu = 00:04:28 ; elapsed = 00:01:59 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21072 ; free virtual = 26951
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 233dbcaba
+
+Time (s): cpu = 00:04:30 ; elapsed = 00:02:01 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21076 ; free virtual = 26955
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.267  | TNS=0.000  | WHS=0.040  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 233dbcaba
+
+Time (s): cpu = 00:04:30 ; elapsed = 00:02:01 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21079 ; free virtual = 26958
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:04:30 ; elapsed = 00:02:01 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21149 ; free virtual = 27027
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+191 Infos, 68 Warnings, 9 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:04:34 ; elapsed = 00:02:03 . Memory (MB): peak = 3226.973 ; gain = 107.086 ; free physical = 21149 ; free virtual = 27027
+source /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/vivado_hook_write_bitstream_pre.tcl
+INFO: [Designcheck 1-1] Checking design
+INFO: [Designcheck 1-2] Slack is 0.041 ns.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3226.973 ; gain = 0.000 ; free physical = 21130 ; free virtual = 27009
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3226.973 ; gain = 0.000 ; free physical = 21098 ; free virtual = 26994
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3226.973 ; gain = 0.000 ; free physical = 21032 ; free virtual = 26981
+INFO: [Common 17-1381] The checkpoint '/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/lowrisc_systems_top_earlgrey_nexysvideo_0.1.runs/impl_1/top_earlgrey_nexysvideo_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 3226.973 ; gain = 0.000 ; free physical = 21162 ; free virtual = 27057
+INFO: [runtcl-4] Executing : report_drc -file top_earlgrey_nexysvideo_drc_routed.rpt -pb top_earlgrey_nexysvideo_drc_routed.pb -rpx top_earlgrey_nexysvideo_drc_routed.rpx
+Command: report_drc -file top_earlgrey_nexysvideo_drc_routed.rpt -pb top_earlgrey_nexysvideo_drc_routed.pb -rpx top_earlgrey_nexysvideo_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/lowrisc_systems_top_earlgrey_nexysvideo_0.1.runs/impl_1/top_earlgrey_nexysvideo_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file top_earlgrey_nexysvideo_methodology_drc_routed.rpt -pb top_earlgrey_nexysvideo_methodology_drc_routed.pb -rpx top_earlgrey_nexysvideo_methodology_drc_routed.rpx
+Command: report_methodology -file top_earlgrey_nexysvideo_methodology_drc_routed.rpt -pb top_earlgrey_nexysvideo_methodology_drc_routed.pb -rpx top_earlgrey_nexysvideo_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/lowrisc_systems_top_earlgrey_nexysvideo_0.1.runs/impl_1/top_earlgrey_nexysvideo_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file top_earlgrey_nexysvideo_power_routed.rpt -pb top_earlgrey_nexysvideo_power_summary_routed.pb -rpx top_earlgrey_nexysvideo_power_routed.rpx
+Command: report_power -file top_earlgrey_nexysvideo_power_routed.rpt -pb top_earlgrey_nexysvideo_power_summary_routed.pb -rpx top_earlgrey_nexysvideo_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+WARNING: [Power 33-230] Invalid input clock frequency for top_earlgrey/spi_device/u_clk_spi/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i. Out of range!
+Resolution: Please refer to Clocking Resources User Guide for valid input clock frequency.
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+205 Infos, 85 Warnings, 9 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:23 ; elapsed = 00:00:10 . Memory (MB): peak = 3333.992 ; gain = 18.977 ; free physical = 20949 ; free virtual = 26855
+INFO: [runtcl-4] Executing : report_route_status -file top_earlgrey_nexysvideo_route_status.rpt -pb top_earlgrey_nexysvideo_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_earlgrey_nexysvideo_timing_summary_routed.rpt -pb top_earlgrey_nexysvideo_timing_summary_routed.pb -rpx top_earlgrey_nexysvideo_timing_summary_routed.rpx -warn_on_violation 
+INFO: [runtcl-4] Executing : report_incremental_reuse -file top_earlgrey_nexysvideo_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file top_earlgrey_nexysvideo_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_earlgrey_nexysvideo_bus_skew_routed.rpt -pb top_earlgrey_nexysvideo_bus_skew_routed.pb -rpx top_earlgrey_nexysvideo_bus_skew_routed.rpx
+Command: write_bitstream -force top_earlgrey_nexysvideo.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC DPIP-1] Input pipelining: DSP top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed input top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed input top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed input top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed output top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed multiplier stage top_earlgrey/core/u_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PDRC-153] Gated clock check: Net top_earlgrey/spi_device/u_reg/u_cfg_cpol/clk_spi_out is a gated clock net sourced by a combinational pin top_earlgrey/spi_device/u_reg/u_cfg_cpol/tx_bitcount[2]_i_2/O, cell top_earlgrey/spi_device/u_reg/u_cfg_cpol/tx_bitcount[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net top_earlgrey/spi_device/u_txf_ctrl/st_next is a gated clock net sourced by a combinational pin top_earlgrey/spi_device/u_txf_ctrl/FSM_onehot_st_next_reg[4]_i_2/O, cell top_earlgrey/spi_device/u_txf_ctrl/FSM_onehot_st_next_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/tck_i is a gated clock net sourced by a combinational pin top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i_i_2/O, cell top_earlgrey/u_dm_top/dap/i_dmi_jtag_tap/i_tck_inv/gen_scan.i_dft_tck_mux/gen_xilinx.u_impl_xilinx/bufgmux_i_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PLHOLDVIO-2] Non-Optimal connections which could lead to hold violations: A LUT top_earlgrey/spi_device/u_reg/u_cfg_cpol/tx_bitcount[2]_i_2 is driving clock pin of 29 cells. This could lead to large hold time violations. Involved cells are:
+top_earlgrey/spi_device/txf_empty_q_reg, top_earlgrey/spi_device/u_fwmode/miso_shift_reg[0], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[1], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[2], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[3], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[4], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[5], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[6], top_earlgrey/spi_device/u_fwmode/miso_shift_reg[7], top_earlgrey/spi_device/u_fwmode/tx_bitcount_reg[0], top_earlgrey/spi_device/u_fwmode/tx_bitcount_reg[1], top_earlgrey/spi_device/u_fwmode/tx_bitcount_reg[2], top_earlgrey/spi_device/u_fwmode/tx_state_reg, top_earlgrey/spi_device/u_tx_fifo/fifo_rptr_gray_reg[0], top_earlgrey/spi_device/u_tx_fifo/fifo_rptr_gray_reg[1]... and (the first 15 of 29 listed)
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_flash_prog_ctrl/cnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_addr/q_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_control_erase_sel/q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_control_op/q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0 has an input control pin top_earlgrey/gen_flash_banks[0].u_flash/gen_flash.u_impl_generic/u_mem/gen_mem_generic.u_impl_generic/mem_reg_0_0/ADDRARDADDR[15] (net: top_earlgrey/u_flash_eflash_n_82) which is driven by a register (top_earlgrey/flash_ctrl/u_reg/u_control_op/q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/dev_select_outstanding_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/spi_device/u_reg/u_socket/num_req_outstanding_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/fifo_rptr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/fifo_rptr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/fifo_rptr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/sync_wptr/q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/sync_wptr/q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_main/u_asf_21/reqfifo/sync_wptr/q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/dev_select_outstanding_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/dev_select_outstanding_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/dev_select_outstanding_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/num_req_outstanding_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1 has an input control pin top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/storage_reg_1/ADDRARDADDR[12] (net: top_earlgrey/spi_device/u_memory_2p/gen_srammem.u_mem/gen_mem_xilinx.u_impl_xilinx/a_addr_i[8]) which is driven by a register (top_earlgrey/u_xbar_peri/u_s1n_5/num_req_outstanding_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 51 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./top_earlgrey_nexysvideo.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/test/opentitan/build/lowrisc_systems_top_earlgrey_nexysvideo_0.1/synth-vivado/lowrisc_systems_top_earlgrey_nexysvideo_0.1.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Jan 10 22:27:02 2020. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+221 Infos, 136 Warnings, 9 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:49 ; elapsed = 00:00:22 . Memory (MB): peak = 3689.133 ; gain = 355.141 ; free physical = 21010 ; free virtual = 26838
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 10 22:27:02 2020...
+[Fri Jan 10 22:27:02 2020] impl_1 finished
+wait_on_run: Time (s): cpu = 00:14:07 ; elapsed = 00:09:22 . Memory (MB): peak = 1358.582 ; gain = 0.000 ; free physical = 22988 ; free virtual = 28816
+Bitstream generation completed
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 10 22:27:02 2020...
